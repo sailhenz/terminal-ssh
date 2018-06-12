@@ -2,7 +2,7 @@
   "name": "terminal-ssh",
   "displayName": "Terminal SSH",
   "description": "Terminal SSH",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "publisher": "sailhenz",
   "engines": {
     "vscode": "^1.23.0"
@@ -21,12 +21,14 @@
         "title": "SSH to server"
       }
     ],
-    "keybindings": [{
+    "keybindings": [
+      {
         "command": "ssh-to-server",
         "key": "ctrl+.",
         "mac": "cmd+.",
         "when": "terminalFocus"
-    }]
+      }
+    ]
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
